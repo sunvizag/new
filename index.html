@@ -1,0 +1,12 @@
+<script src="swfobject.js"></script>
+<div id="mediaspace">This text will be replaced</div>
+<script>
+	var so = new SWFObject('player.swf','mpl','470','290','9');
+	so.addParam('allowfullscreen','true');
+	so.addParam('allowscriptaccess','always');
+	so.addParam('wmode','opaque');
+	so.addVariable('file','sample.flv');
+	so.addVariable('autostart','true');
+	so.addVariable('streamer','rtmp://78.129.184.15:29162/streaming');
+	so.write('mediaspace');
+</script>
