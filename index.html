@@ -1,12 +1,15 @@
-<script type='text/javascript' src='swfobject/swfobject.js'></script>
-<div id='mediaspace'>You do not have the Flash Player installed for this browser.</div>
-<script type='text/javascript'>
-var so = new SWFObject('swfobject/test.swf','mpl','470','290','9');
-so.addParam('allowfullscreen','true');
-so.addParam('allowscriptaccess','always');
-so.addParam('wmode','opaque');
-so.addVariable('rtmp.subscribe','true');
-so.addVariable('file','livestream');
-so.addVariable('streamer','rtmp://78.129.184.15:29162/streaming');
-so.write('mediaspace');
-</script>
+<html>
+<body>
+<script type='text/javascript' src='swfobject.js'></script>
+<div id='mediaspace'>Playing FLV</div>
+<object width="400" height="409" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
+  <param name="allowscriptaccess" value="always"></param>
+  <param name="file" value="cocaine">  
+  <embed height="500" width="650" flashvars="file=cocaine&amp;streamer=rtmp://78.129.184.15:29162/streaming/flvplayback&amp;rtmp.subscribe=true&amp;quality=best&amp;controlbar=bottom&amp;rtmp.tunneling=false&amp;frontcolor=#fff&amp;backcolor=#000&amp;stretching=exactfit&amp;autostart=true" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" src="http://s.zuuk.net/ply.swf" type="application/x-shockwave-flash"/> 
+</object>
+</body>
+</html>
+
+
+
+
