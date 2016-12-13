@@ -1,7 +1,7 @@
-<script type='text/javascript' src='http://your_account_name.gravlab.net/00xxxx/jwplayer/swfobject.js'></script>
+<script type='text/javascript' src='swfobject/swfobject.js'></script>
 <div id='mediaspace'>You do not have the Flash Player installed for this browser.</div>
 <script type='text/javascript'>
-var so = new SWFObject('http://your_account_name.gravlab.net/00xxxx/jwplayer/player.swf','mpl','470','290','9');
+var so = new SWFObject('swfobject/test.swf','mpl','470','290','9');
 so.addParam('allowfullscreen','true');
 so.addParam('allowscriptaccess','always');
 so.addParam('wmode','opaque');
@@ -10,16 +10,3 @@ so.addVariable('file','livestream');
 so.addVariable('streamer','rtmp://78.129.184.15:29162/streaming');
 so.write('mediaspace');
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
