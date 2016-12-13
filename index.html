@@ -1,12 +1,12 @@
-<script src="swfobject/swfobject.js"></script>
-<div id="mediaspace">This text will be replaced</div>
-<script>
-	var so = new SWFObject('player.swf','mpl','470','290','9');
-	so.addParam('allowfullscreen','true');
-	so.addParam('allowscriptaccess','always');
-	so.addParam('wmode','opaque');
-	so.addVariable('file','sample.flv');
-	so.addVariable('autostart','true');
-	so.addVariable('streamer','rtmp://78.129.184.15:29162/streaming');
-	so.write('mediaspace');
+<script type='text/javascript' src='jwplayer/swfobject.js'></script>
+<div id='mediaspace'>You do not have the Flash Player installed for this browser.</div>
+<script type='text/javascript'>
+var so = new SWFObject('jwplayer/player.swf','mpl','470','290','9');
+so.addParam('allowfullscreen','true');
+so.addParam('allowscriptaccess','always');
+so.addParam('wmode','opaque');
+so.addVariable('rtmp.subscribe','true');
+so.addVariable('file','livestream');
+so.addVariable('streamer','rtmp://78.129.184.15:29162/streaming');
+so.write('mediaspace');
 </script>
