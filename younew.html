@@ -1,0 +1,17 @@
+<script>
+$('input[type=submit]').click(function(){
+    $('#elm_14').val($('#elm_6').val());
+    $('#elm_16').val($('#elm_7').val());
+});
+</script>
+
+<form>
+<input type="text" class="input-text " value="" size="32" name="user_data[firstname]" id="elm_6">
+<input type="text" class="input-text " value="" size="32" name="user_data[lastname]" id="elm_7">
+    </form>
+    <form action="google.com">
+<input type="text" class="input-text " value="" size="32" name="user_data[b_firstname]" id="elm_14">
+<input type="text" class="input-text " value="" size="32" name="user_data[s_firstname]" id="elm_16">
+    
+<input type="submit" value="Continue" name="dispatch[checkout.update_steps]">
+    </form>
