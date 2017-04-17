@@ -2,9 +2,11 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<table>
+  <tr>
+    <th>
 <canvas id="canvas" width="200" height="200"
-style="background-color:#333">
+style="background-color:#FFFFFF">
 </canvas>
 
 <script>
@@ -89,7 +91,8 @@ function drawHand(ctx, pos, length, width) {
 }
 </script>
 
-
+    </th>
+    <th>
 
   
 <svg height="140" width="140">
@@ -130,7 +133,9 @@ window.onload = function() {
    ctx.drawImage(img, 10, 10);
 };
 </script>
-
+    </th>
+    <th>
+      
 <canvas id="canvas" width="200" height="200"
 style="background-color:#333">
 </canvas>
@@ -216,7 +221,13 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 </script>
-
+    </th>
+  </tr>
+  <tr>
+    <th>
+    </th>
+  </tr>
+  </table>
 </body>
 </html>
   
