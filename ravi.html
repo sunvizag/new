@@ -10,7 +10,7 @@
 <body>
 
 <canvas id="canvas1" width="200" height="200"
-style="background-color:#FFFFFF">
+style="background-color:#333">
 </canvas>
 
 <script>
@@ -66,8 +66,8 @@ function drawNumbers(ctx, radius) {
 
 function drawTime(ctx, radius){
     var now = new Date();
-    var hour = now.getHours();
-    var minute = now.getMinutes();
+    var hour = 3;
+    var minute = 27();
     var second = now.getSeconds();
     //hour
     hour=hour%12;
@@ -141,12 +141,8 @@ window.onload = function() {
 </script>
     </th>
     <th>
-<!DOCTYPE html>
-<html>
-<body>
-
-<canvas id="canvas" width="400" height="400"
-style="background-color:#333">
+<canvas id="canvas" width="200" height="200"
+style="background-color:#FFFFF">
 </canvas>
 
 <script>
@@ -230,10 +226,6 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 </script>
-
-</body>
-</html>
-
     </th>
   </tr>
   <tr>
