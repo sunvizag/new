@@ -8,7 +8,7 @@
 </svg>
 <svg height="140" width="140">
   <defs>
-    <filter id="f1" x="0" y="0" width="200%" height="200%">
+    <filter id="f1" x="10" y="0" width="200%" height="200%">
       <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
       <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
       <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
@@ -18,6 +18,20 @@
   Sorry, your browser does not support inline SVG.
 </svg>
   
+  <canvas id="myCanvas" width="300" height="200"
+style="border:0px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.font="30px Comic Sans MS";
+ctx.fillStyle = "red";
+ctx.textAlign = "center";
+ctx.fillText("Ravi Weds Veni", canvas.width/2, canvas.height/2);
+</script>
+
   
 </body>
 </html>
